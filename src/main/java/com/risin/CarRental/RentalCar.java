@@ -1,2 +1,25 @@
-package com.risin.CarRental;public class RentalCar {
+package com.risin.CarRental;
+
+public class RentalCar {
+    private Car car;
+    private Customer customer;
+    private int days;
+
+    public RentalCar(Car car , Customer customer , int days){
+        this.car = car;
+        this.customer = customer;
+        this.days = days;
+    }
+
+    public Car getCar(){
+        return car;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public int getDays() {
+        return days;
+    }
 }
